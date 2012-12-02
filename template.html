@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Yale Union App</title>
+
+    <!-- Sets initial viewport load and disables zooming  -->
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Makes your prototype chrome-less once bookmarked to your phone's home screen -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <!-- Set Apple icons for when prototype is saved to home screen -->
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="touch-icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="touch-icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="touch-icons/apple-touch-icon-57x57.png">
+
+    <!-- Include the compiled Ratchet CSS -->
+    <link rel="stylesheet" href="ratchet.css">
+
+    <!-- Include the compiled Ratchet JS -->
+    <script src="ratchet.js"></script>
+
+  </head>
+  <body>
+
+  <!-- Make sure all your bars are the first things in your <body> -->
+  <header class="bar-title">
+    <span class="info" title="information"><a href="#appInfo">i</a></span>
+  </header>
+
+  <!-- Wrap all non-bar HTML in the .content div (this is actually what scrolls) -->
+  <div class="content">
+  	<div id="the-toggler" class="cf">
+  	
+  		<span class="label">Soft Push</span>
+  		
+	  	<div class="toggle">
+			  <div class="toggle-handle"></div>
+			</div>
+			
+			<span class="label">Hard Push</span>
+			
+  	</div>
+  </div>
+
+  <!-- popover -->
+    <div id="appInfo" class="popover">
+		  <header class="popover-header">
+		    <h3 class="title">Notification Preference:</h3>
+		  </header>
+		  <p>Soft Push = Less frequent updates (1/month) regarding exhibitions and events at Yale Union.</p>
+		  <p>Hard Push = Frequent updates (1/week) regarding exhibitions, events and cultural interests at Yale Union.</p>
+		</div>
+		
+  </body>
+</html>
